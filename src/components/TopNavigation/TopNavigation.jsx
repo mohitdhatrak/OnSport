@@ -1,6 +1,9 @@
-import logo from "../assets/website-logo.png";
+// All module imports
 import { Link } from "react-router-dom";
-import "../styles/TopNavigation.css";
+
+// All local imports
+import "./TopNavigation.css";
+import logo from "../../assets/website-logo.png";
 
 export function TopNavigation() {
     return (

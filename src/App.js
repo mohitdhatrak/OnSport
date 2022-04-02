@@ -1,5 +1,7 @@
-import "./App.css";
+// All module imports
 import { Routes, Route } from "react-router-dom";
+
+// All local imports
 import {
     Cart,
     Home,
