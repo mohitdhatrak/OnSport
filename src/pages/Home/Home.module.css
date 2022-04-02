@@ -1,0 +1,74 @@
+:root {
+    /* spark-ui css variables control */
+
+    /* image css-variables */
+    --responsive-image-width: 100vw;
+}
+
+.main-banner {
+    position: relative;
+}
+
+.image-container {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    height: 60vh;
+    max-width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.overlay-text-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* rgba helped get the background opacity changed to 0.75, opacity property changed opacity of children too */
+    background-color: rgba(54, 54, 54, 0.75);
+    color: #fff;
+
+    /* flex-properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-text {
+    text-align: center;
+    width: 50rem;
+    max-width: 90%;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.overlay-button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.3em 0.6em;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.overlay-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.cards-container {
+    margin: 0 1rem;
+    margin-bottom: 3rem;
+
+    /* grid properties */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr));
+    justify-content: center;
+    grid-gap: 1.5em;
+}
