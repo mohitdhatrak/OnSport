@@ -95,8 +95,10 @@ a {
 
 .navigation .button.button-warn {
     font-size: 1.3rem;
-    padding: 0.3em 0;
-    margin-left: 0.8em;
+    /* padding: 0.3em 0; */
+    /* margin-left: 0.8em; */
+    padding: 0.3em 0.6em;
+    margin-left: 0.2em;
 }
 
 .button.button-warn:hover {
@@ -132,7 +134,7 @@ a {
     padding: 0.3em 0.6em;
 }
 
-.button.button-warn .login-signup-link {
+.button.button-warn {
     color: #b91c1c;
 }
 

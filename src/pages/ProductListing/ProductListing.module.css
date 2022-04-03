@@ -1,0 +1,101 @@
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.main-container {
+    /* flex properties */
+    display: flex;
+}
+
+/* left side filter section */
+
+.side-drawer {
+    width: max-content;
+    margin: 3.5em 2em;
+    margin-right: 0rem;
+}
+
+/* right side main content section */
+
+:root {
+    /* spark-ui css variables control */
+
+    --card-hover-box-shadow: 0px 0px 20px 1px #e3dddd;
+    --card-border-radius: 0.5em;
+    --card-primary-button-border-radius: 0.5em;
+    --card-secondary-button-bg-color: none;
+    --card-secondary-button-border-radius: 0.5em;
+    --card-button-hover-color: #7dd3fc;
+    --card-icon-size: 1.3rem;
+    --card-badge-bg-color: #fef08a;
+    --card-badge-border: 1px solid #000;
+    --card-badge-border-radius: 0.5em;
+    /* rating stars css variables */
+    --rating-outline-icon-color: #808080;
+    --rating-outline-icon-size: 1rem;
+    --rating-outline-icon-hover-color: #808080;
+    --rating-outline-gap-between: 0;
+}
+
+.main-content {
+    width: 100%;
+    margin: 3em 2em;
+}
+
+.card-container {
+    padding: 0;
+    margin-top: 2em;
+
+    /* grid properties */
+    display: grid;
+    grid-row: auto;
+    grid-column-gap: 3em;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 13rem);
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1120px) {
+    .side-drawer {
+        margin-left: 1.5em;
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .side-drawer {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0em 2em;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-content {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, 12rem);
+        grid-gap: 1em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, 10.5rem);
+    }
+}

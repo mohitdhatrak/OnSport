@@ -17,11 +17,15 @@ export function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product-listing" element={<ProductListing />} />
-            <Route path="/product-detail" element={<ProductDetail />} />
+            <Route
+                path="/product-detail?id=:productId"
+                element={<ProductDetail />}
+            />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            {/* <Route path="*" element={<Error404Page />} /> */}
         </Routes>
     );
 }

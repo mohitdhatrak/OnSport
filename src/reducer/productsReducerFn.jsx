@@ -1,17 +1,23 @@
+export const productsInitialState = {
+    wishlist: [],
+    cart: [],
+};
+
 export function productsReducerFn(state, action) {
+    const { wishlist } = state;
     const { type, payload } = action;
 
     switch (type) {
         case "ADD_TO_WISHLIST":
             return {
                 ...state,
-                wishlist: [...state.wishlist, { ...payload }],
+                wishlist: [...wishlist, { ...payload }],
             };
 
-        case "ADD_TO_CART":
+        case "REMOVE_FROM_WISHLIST":
             return {
                 ...state,
-                cart: [...state.cart, { ...payload }],
+                wishlist: wishlist.filter((obj) => obj._id !== payload._id),
             };
 
         default:

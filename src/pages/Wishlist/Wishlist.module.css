@@ -1,0 +1,108 @@
+/* main content */
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+:root {
+    /* spark-ui css variables control */
+
+    --card-hover-box-shadow: 0px 0px 20px 1px #e3dddd;
+    --card-border-radius: 0.5em;
+    --card-primary-button-border-radius: 0.5em;
+    --card-secondary-button-bg-color: none;
+    --card-secondary-button-border-radius: 0.5em;
+    --card-button-hover-color: #7dd3fc;
+    --card-icon-size: 1.3rem;
+    --card-badge-bg-color: #fef08a;
+    --card-badge-border: 1px solid #000;
+    --card-badge-border-radius: 0.5em;
+    /* rating stars css variables */
+    --rating-outline-icon-color: #808080;
+    --rating-outline-icon-size: 1rem;
+    --rating-outline-icon-hover-color: #808080;
+    --rating-outline-gap-between: 0;
+}
+
+.main-content {
+    padding: 0 2.5rem;
+}
+
+.wishlist-heading {
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wishlist-empty-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 30rem;
+    max-width: 90%;
+    object-fit: cover;
+}
+
+.wishlist-empty-text {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.card-container {
+    padding: 0;
+    margin: 2em 0;
+    margin-left: 4em;
+
+    /* grid properties */
+    display: grid;
+    grid-row: auto;
+    grid-column-gap: 3.5em;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 13.5rem);
+    justify-content: start;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-container {
+        margin-left: 2em;
+        grid-column-gap: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .card-container {
+        margin-left: 1em;
+        grid-column-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .card-container {
+        margin-left: 0;
+        margin-right: 0;
+        grid-gap: 1em;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: 0 0.8em;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+}
