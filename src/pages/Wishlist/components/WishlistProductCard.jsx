@@ -1,7 +1,7 @@
 // All module imports
 import { useNavigate } from "react-router-dom";
 
-// All local
+// All local imports
 import "../../ProductListing/components/ProductCard/ProductCard.css";
 import { useProducts } from "../../../context/products-context";
 import { displayRatingStars } from "../../../utils/displayRatingStars";
