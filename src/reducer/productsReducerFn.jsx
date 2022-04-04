@@ -1,8 +1,3 @@
-export const productsInitialState = {
-    wishlist: [],
-    cart: [],
-};
-
 export function productsReducerFn(state, action) {
     const { wishlist } = state;
     const { type, payload } = action;

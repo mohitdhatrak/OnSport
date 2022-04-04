@@ -2,12 +2,14 @@
 import { createContext, useContext, useReducer } from "react";
 
 // All local imports
-import {
-    productsInitialState,
-    productsReducerFn,
-} from "../reducer/productsReducerFn.jsx";
+import { productsReducerFn } from "../reducer/productsReducerFn.jsx";
 
-const ProductsContext = createContext({});
+const productsInitialState = {
+    wishlist: [],
+    cart: [],
+};
+
+const ProductsContext = createContext(productsInitialState);
 
 export const ProductsProvider = ({ children }) => {
     const [{ wishlist, cart }, dispatch] = useReducer(

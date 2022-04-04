@@ -1,29 +1,9 @@
 import { v4 as uuid } from "uuid";
 
 export const products = [
-    // {
-    //   _id: uuid(),
-    //   title: "You Can WIN",
-    //   author: "Shiv Khera",
-    //   price: "5000",
-    //   categoryName: "non-fiction",
-    // },
-    // {
-    //   _id: uuid(),
-    //   title: "You are Winner",
-    //   author: "Junaid Qureshi",
-    //   price: "3000",
-    //   categoryName: "horror",
-    // },
-    // {
-    //   _id: uuid(),
-    //   title: "Think and Grow Rich",
-    //   author: "Shiv Khera",
-    //   price: "1000",
-    //   categoryName: "fiction",
-    // },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806540/Ecom-products/punching-bag_flsk6t.jpg",
         imageAlt: "Punching bag",
@@ -34,10 +14,10 @@ export const products = [
         rating: 4,
         price: 2000,
         percentDiscount: 20,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648808043/Ecom-products/cricket-bat_v1eml9.jpg",
         imageAlt: "Cricket bat (season)",
@@ -48,10 +28,10 @@ export const products = [
         rating: 5,
         price: 20000,
         percentDiscount: 15,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806662/Ecom-products/cricket-ball_opu5az.jpg",
         imageAlt: "Leather cricket ball red",
@@ -62,10 +42,10 @@ export const products = [
         rating: 4,
         price: 600,
         percentDiscount: 20,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806662/Ecom-products/basketball_g1mfja.jpg",
         imageAlt: "Spalding basketball",
@@ -76,10 +56,10 @@ export const products = [
         rating: 5,
         price: 1200,
         percentDiscount: 10,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806663/Ecom-products/basketball-hoop_nqn2kn.jpg",
         imageAlt: "Basketball hoop",
@@ -90,10 +70,10 @@ export const products = [
         rating: 3,
         price: 1000,
         percentDiscount: 5,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806686/Ecom-products/football_tglyvh.jpg",
         imageAlt: "Football Puma",
@@ -104,10 +84,10 @@ export const products = [
         rating: 4,
         price: 4000,
         percentDiscount: 30,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806668/Ecom-products/football-cones_vt2mwm.jpg",
         imageAlt: "Football cones",
@@ -118,10 +98,10 @@ export const products = [
         rating: 2,
         price: 1600,
         percentDiscount: 10,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806691/Ecom-products/boxing-gloves_bgur0u.png",
         imageAlt: "Boxing gloves",
@@ -132,10 +112,10 @@ export const products = [
         rating: 4,
         price: 2200,
         percentDiscount: 15,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806670/Ecom-products/hockey-stick_v3b7vz.jpg",
         imageAlt: "Hockey stick",
@@ -146,10 +126,10 @@ export const products = [
         rating: 3,
         price: 1350,
         percentDiscount: 30,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806672/Ecom-products/hockey-ball_nlvdeg.jpg",
         imageAlt: "Hockey ball",
@@ -160,10 +140,10 @@ export const products = [
         rating: 5,
         price: 600,
         percentDiscount: 5,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "equipment",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806672/Ecom-products/javelin_aisnkq.jpg",
         imageAlt: "Javelin",
@@ -174,10 +154,10 @@ export const products = [
         rating: 5,
         price: 12000,
         percentDiscount: 20,
-        categoryName: "equipment",
     },
     {
         _id: uuid(),
+        categoryName: "apparel",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806683/Ecom-products/sweatshirt_euknao.jpg",
         imageAlt: "Asics sweatshirt",
@@ -188,10 +168,10 @@ export const products = [
         rating: 4,
         price: 5500,
         percentDiscount: 10,
-        categoryName: "apparel",
     },
     {
         _id: uuid(),
+        categoryName: "apparel",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806682/Ecom-products/sweatpants_zae1zb.jpg",
         imageAlt: "Adidas sweatpants",
@@ -202,10 +182,10 @@ export const products = [
         rating: 5,
         price: 3000,
         percentDiscount: 15,
-        categoryName: "apparel",
     },
     {
         _id: uuid(),
+        categoryName: "shoes",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806680/Ecom-products/stud-shoes_ekch4u.jpg",
         imageAlt: "Stud shoes (football)",
@@ -216,10 +196,10 @@ export const products = [
         rating: 5,
         price: 10000,
         percentDiscount: 30,
-        categoryName: "shoes",
     },
     {
         _id: uuid(),
+        categoryName: "shoes",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806678/Ecom-products/running-shoes_qlzkil.jpg",
         imageAlt: "Sports (running) shoes",
@@ -230,10 +210,10 @@ export const products = [
         rating: 4,
         price: 15000,
         percentDiscount: 25,
-        categoryName: "shoes",
     },
     {
         _id: uuid(),
+        categoryName: "shoes",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806681/Ecom-products/spikes-shoes_f4vvqd.jpg",
         imageAlt: "Spike shoes",
@@ -244,10 +224,10 @@ export const products = [
         rating: 4,
         price: 8000,
         percentDiscount: 20,
-        categoryName: "shoes",
     },
     {
         _id: uuid(),
+        categoryName: "jerseys",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806675/Ecom-products/cricket-jersey_j2pgjo.jpg",
         imageAlt: "Cricket India jersey",
@@ -258,10 +238,10 @@ export const products = [
         rating: 4,
         price: 2000,
         percentDiscount: 10,
-        categoryName: "jerseys",
     },
     {
         _id: uuid(),
+        categoryName: "jerseys",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806686/Ecom-products/football-jersey_xxox3e.jpg",
         imageAlt: "Football Argentina jersey",
@@ -272,10 +252,10 @@ export const products = [
         rating: 3,
         price: 4000,
         percentDiscount: 22,
-        categoryName: "jerseys",
     },
     {
         _id: uuid(),
+        categoryName: "jerseys",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806664/Ecom-products/basketball-jersey_pcha07.jpg",
         imageAlt: "Basketball jersey",
@@ -286,10 +266,10 @@ export const products = [
         rating: 5,
         price: 5000,
         percentDiscount: 5,
-        categoryName: "jerseys",
     },
     {
         _id: uuid(),
+        categoryName: "accessories",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648811626/Ecom-products/ball-keychain_qfxkss.jpg",
         imageAlt: "3D sports keychain",
@@ -300,10 +280,10 @@ export const products = [
         rating: 2,
         price: 400,
         percentDiscount: 10,
-        categoryName: "accessories",
     },
     {
         _id: uuid(),
+        categoryName: "accessories",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806686/Ecom-products/tennis-keychain_f4jgjj.jpg",
         imageAlt: "Tennis keychain",
@@ -314,10 +294,10 @@ export const products = [
         rating: 4,
         price: 600,
         percentDiscount: 20,
-        categoryName: "accessories",
     },
     {
         _id: uuid(),
+        categoryName: "trophies-medals",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806689/Ecom-products/trophy_i8w0nc.jpg",
         imageAlt: "Sports trophy",
@@ -328,10 +308,10 @@ export const products = [
         rating: 3,
         price: 1000,
         percentDiscount: 15,
-        categoryName: "trophies-medals",
     },
     {
         _id: uuid(),
+        categoryName: "trophies-medals",
         imageSrc:
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806691/Ecom-products/medals_dchhvo.jpg",
         imageAlt: "Sports medals",
@@ -342,6 +322,5 @@ export const products = [
         rating: 4,
         price: 600,
         percentDiscount: 5,
-        categoryName: "trophies-medals",
     },
 ];

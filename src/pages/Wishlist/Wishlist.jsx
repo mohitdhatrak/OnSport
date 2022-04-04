@@ -17,6 +17,7 @@ export function Wishlist() {
                     My Wishlist ({wishlist.length}{" "}
                     {wishlist.length === 1 ? "item" : "items"})
                 </h2>
+
                 {wishlist.length === 0 ? (
                     <div>
                         <img

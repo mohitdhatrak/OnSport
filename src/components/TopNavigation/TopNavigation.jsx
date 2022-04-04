@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 // All local imports
 import "./TopNavigation.css";
 import logo from "../../assets/website-logo.png";
+import { useProducts } from "../../context/products-context";
 
 export function TopNavigation() {
+    const { cart } = useProducts();
+
     return (
         <nav
             aria-label="Top navigation"
@@ -40,7 +43,11 @@ export function TopNavigation() {
                             shopping_cart
                         </i>
                         <span className="navigation-button-text">Cart</span>
-                        <div className="badge-badge2">8</div>
+                        {cart.length === 0 ? (
+                            ""
+                        ) : (
+                            <div className="badge-badge2">{cart.length}</div>
+                        )}
                     </Link>
                 </div>
                 <button className="button button-secondary">
