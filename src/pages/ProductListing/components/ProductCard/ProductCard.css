@@ -1,0 +1,85 @@
+.card-item {
+    cursor: pointer;
+}
+
+.card-image {
+    height: 12rem;
+    object-fit: cover;
+}
+
+.card-heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-subheading {
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-with-badge .card-image-header-container .card-button,
+.card-with-dismiss .card-image-header-container .card-button {
+    top: 0.4em;
+    right: 0.4em;
+    background-color: rgba(240, 240, 243, 0.5);
+}
+
+.card-with-badge .card-image-header-container .card-button:hover,
+.card-with-dismiss .card-image-header-container .card-button:hover {
+    background-color: rgba(240, 240, 243, 1);
+}
+
+.card-badge {
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.card-rating {
+    margin: 0;
+    margin-top: 0.6em;
+    margin-bottom: -0.4em;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.mrp {
+    color: #808080;
+    margin-left: 0.5rem;
+}
+
+.card-with-badge .card-footer .card-button,
+.card-with-dismiss .card-footer .card-button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.wishlist-icon {
+    color: #b91c1c;
+}
+
+:root {
+    /* rating stars css variables */
+    --rating-filled-icon-color: #a16207;
+    --rating-filled-icon-size: 1rem;
+    --rating-filled-icon-hover-color: var(--rating-filled-icon-color);
+}
+
+.rating-svg-icons {
+    color: var(--rating-filled-icon-color);
+    font-size: var(--rating-filled-icon-size);
+}

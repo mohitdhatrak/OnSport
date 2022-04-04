@@ -4,16 +4,21 @@ import { createContext, useContext, useReducer } from "react";
 // All local imports
 import { productsReducerFn } from "../reducer/productsReducerFn.jsx";
 
-const ProductsContext = createContext({});
+const productsInitialState = {
+    wishlist: [],
+    cart: [],
+};
+
+const ProductsContext = createContext(productsInitialState);
 
 export const ProductsProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(productsReducerFn, {
-        cart: [],
-        wishlist: [],
-    });
+    const [{ wishlist, cart }, dispatch] = useReducer(
+        productsReducerFn,
+        productsInitialState
+    );
 
     return (
-        <ProductsContext.Provider value={{ state, dispatch }}>
+        <ProductsContext.Provider value={{ wishlist, cart, dispatch }}>
             {children}
         </ProductsContext.Provider>
     );

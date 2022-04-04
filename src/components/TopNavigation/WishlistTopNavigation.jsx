@@ -6,7 +6,7 @@ import "./TopNavigation.css";
 import logo from "../../assets/website-logo.png";
 import { useProducts } from "../../context/products-context";
 
-export function TopNavigation() {
+export function WishlistTopNavigation() {
     const { cart } = useProducts();
 
     return (
@@ -31,12 +31,6 @@ export function TopNavigation() {
                 />
             </div>
             <div className="navigation-right-buttons-container">
-                <Link to="/wishlist" className="navigation-button">
-                    <i className="material-icons navigation-svg-icons">
-                        favorite_border
-                    </i>
-                    <span className="navigation-button-text">Wishlist</span>
-                </Link>
                 <div className="button-with-badge badge-medium">
                     <Link to="/cart" className="badge-button">
                         <i className="material-icons-outlined navigation-svg-icons">
@@ -50,11 +44,7 @@ export function TopNavigation() {
                         )}
                     </Link>
                 </div>
-                <button className="button button-secondary">
-                    <Link to="/login" className="login-signup-link">
-                        Login
-                    </Link>
-                </button>
+                <button className="button button-warn">Logout</button>
             </div>
         </nav>
     );
