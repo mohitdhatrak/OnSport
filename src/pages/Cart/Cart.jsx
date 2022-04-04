@@ -5,6 +5,7 @@ import { CartTopNavigation } from "../../components/TopNavigation/CartTopNavigat
 import { useProducts } from "../../context/products-context";
 import { CartProductCard } from "./components/CartProductCard";
 import { CartPriceModal } from "./components/CartPriceModal";
+import { numOfProductsInCart } from "../../utils/numOfProductsInCart";
 
 export function Cart() {
     const { cart } = useProducts();
@@ -12,7 +13,8 @@ export function Cart() {
     function CartHeading() {
         return (
             <h2 className={cartStyles["cart-heading"]}>
-                My Cart ({cart.length} {cart.length === 1 ? "item" : "items"})
+                My Cart ({numOfProductsInCart()}{" "}
+                {numOfProductsInCart() === 1 ? "item" : "items"})
             </h2>
         );
     }
@@ -22,7 +24,7 @@ export function Cart() {
         <>
             <CartTopNavigation />
 
-            {cart.length === 0 ? (
+            {numOfProductsInCart() === 0 ? (
                 <main className={cartStyles["main-container"]}>
                     <CartHeading />
 
