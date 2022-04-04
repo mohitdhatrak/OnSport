@@ -18,7 +18,7 @@ export function App() {
             <Route path="/" element={<Home />} />
             <Route path="/product-listing" element={<ProductListing />} />
             <Route
-                path="/product-detail?id=:productId"
+                path="/product-detail/:productId"
                 element={<ProductDetail />}
             />
             <Route path="/wishlist" element={<Wishlist />} />

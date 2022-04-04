@@ -11,9 +11,11 @@ export const products = [
         title: "Punching bag",
         description:
             "100 Kg classic punching bag, best suited for beginners as well as professionals!",
+        sellerName: "OnSport",
         rating: 4,
         price: 2000,
         percentDiscount: 20,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -25,9 +27,11 @@ export const products = [
         title: "Cricket bat",
         description:
             "Gray-Nicolls Nitro GN7, high quality English Willow Cricket Bat. Size SH, good for ages 16+",
+        sellerName: "OnSport",
         rating: 5,
         price: 20000,
         percentDiscount: 15,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -36,12 +40,14 @@ export const products = [
             "https://res.cloudinary.com/mohitdhatrak/image/upload/v1648806662/Ecom-products/cricket-ball_opu5az.jpg",
         imageAlt: "Leather cricket ball red",
         bestSeller: false,
-        title: "Cricket leather ball(red)",
+        title: "Cricket leather ball (red)",
         description:
             "Kookaburra leather cricket ball (red), used in test cricket or club cricket. Ideal for school matches.",
+        sellerName: "OnSport",
         rating: 4,
         price: 600,
         percentDiscount: 20,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -53,9 +59,11 @@ export const products = [
         title: "Basketball Spalding",
         description:
             "Spalding rubber basketball with a good grip, comes with an inflating pin. Suitable for cement courts as well.",
+        sellerName: "OnSport",
         rating: 5,
         price: 1200,
         percentDiscount: 10,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -67,9 +75,11 @@ export const products = [
         title: "Basketball hoop",
         description:
             "Standard basketball hoop, can be attached to a backboard in a court or even to a wall.",
+        sellerName: "OnSport",
         rating: 3,
         price: 1000,
         percentDiscount: 5,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -81,9 +91,11 @@ export const products = [
         title: "Football Puma",
         description:
             "Puma classic football (soccer) ball, high quality. The Puma Accelerate makes you play and feel like a better player.",
+        sellerName: "OnSport",
         rating: 4,
         price: 4000,
         percentDiscount: 30,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -95,9 +107,11 @@ export const products = [
         title: "Football cones",
         description:
             "Football cones, sports equipment for football (soccer) training. Useful for basic drills, to develop better control of the ball.",
+        sellerName: "OnSport",
         rating: 2,
         price: 1600,
         percentDiscount: 10,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -109,9 +123,11 @@ export const products = [
         title: "Boxing gloves",
         description:
             "Everlast amateur competition fight boxing gloves (red). High grade leather provides long-lasting durability and functionality.",
+        sellerName: "OnSport",
         rating: 4,
         price: 2200,
         percentDiscount: 15,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -123,9 +139,11 @@ export const products = [
         title: "Hockey stick",
         description:
             "Field hockey stick by Alfa, dual core performing technology and hybrid composite structure stick. Length 37 inches, comes with a stick bag.",
+        sellerName: "OnSport",
         rating: 3,
         price: 1350,
         percentDiscount: 30,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -137,9 +155,11 @@ export const products = [
         title: "Hockey ball",
         description:
             "An excellent quality dimpled ball molded in white color. Suitable for matches and training on all surfaces. Hockey game can be played with these balls, the dimple standard balls are ideal for league play.",
+        sellerName: "OnSport",
         rating: 5,
         price: 600,
         percentDiscount: 5,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -151,9 +171,11 @@ export const products = [
         title: "Javelin",
         description:
             "Nordic Competition Javelin, Comet Aluminium, 400gm. A soft shaft competition javelin designed in Sweden by Nordic Sport with a chromed steel tip.",
+        sellerName: "OnSport",
         rating: 5,
         price: 12000,
         percentDiscount: 20,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -165,9 +187,11 @@ export const products = [
         title: "Asics sweatshirt",
         description:
             "Regular Fit, Hand wash cold, 70% polyester, 26% viscose, 4% elastane, with Anti-Bacterial finish.",
+        sellerName: "OnSport",
         rating: 4,
         price: 5500,
         percentDiscount: 10,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -179,9 +203,11 @@ export const products = [
         title: "Sweatpants Adidas",
         description:
             "Stretchable poly-cotton blend french terry fabric. Elasticated waist with adjustable drawstrings. Dual side slip-in pockets. 52% Cotton, 48% Polyester, recycled.",
+        sellerName: "OnSport",
         rating: 5,
         price: 3000,
         percentDiscount: 15,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -193,9 +219,11 @@ export const products = [
         title: "Stud (football) shoes",
         description:
             "Soft, thin synthetic leather upper for a great fit and ball feel, has textured pattern, printed detail, Nike Swoosh on the forefoot and backfoot, a reinforced heel collar. Agility traction pattern for faster release and maximum responsiveness",
+        sellerName: "OnSport",
         rating: 5,
         price: 10000,
         percentDiscount: 30,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -207,9 +235,11 @@ export const products = [
         title: "Running (sports) shoes",
         description:
             "These shoes offer comfort and support for city running. They have a knit upper with a sock-like fit. The wide platform provides stability for quick changes in direction, and boost HD provides responsive cushioning with a firm feel.",
+        sellerName: "OnSport",
         rating: 4,
         price: 15000,
         percentDiscount: 25,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -221,9 +251,11 @@ export const products = [
         title: "Spike shoes",
         description:
             "White in colour, these Domain 2 Ns cricket shoes by Nike will ensure better stability and flexibility for your feet. Featuring a synthetic upper with contrast coloured detailing, these lace-ups have a cushioned footbed for impact resistance.",
+        sellerName: "OnSport",
         rating: 4,
         price: 8000,
         percentDiscount: 20,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -235,9 +267,11 @@ export const products = [
         title: "Indian cricket jersey",
         description:
             "Original jersey of the Indian cricket team. Typography printed, Regular length, Polo collar, Short, regular sleeves, Knitted polyester fabric, machine wash.",
+        sellerName: "OnSport",
         rating: 4,
         price: 2000,
         percentDiscount: 10,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -249,9 +283,11 @@ export const products = [
         title: "Argentina football jersey",
         description:
             "Jersey of the Argentinian football team. Dry fit Jersey - Quick Dry, Ideal for Football. White - sky blue vertical stripe jersey for Argentina Soccer Fans. Flat Seams Reduce Chaffing, Serious Moisture absorption and micro pores for .",
+        sellerName: "OnSport",
         rating: 3,
         price: 4000,
         percentDiscount: 22,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -263,9 +299,11 @@ export const products = [
         title: "Basketball jersey",
         description:
             "NBA Los Angeles Lakers Kobe Bryant Swingman Jersey, White.  Officially licensed NBA product. 100% Polyester - Machine Washable Dazzle and mesh jersey.",
+        sellerName: "OnSport",
         rating: 5,
         price: 5000,
         percentDiscount: 5,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -277,9 +315,11 @@ export const products = [
         title: "3D sports keychain",
         description:
             "3D Sports, Basketball, Volleyball, Football, key chains. Can be given as a gift to sports' lovers.",
+        sellerName: "OnSport",
         rating: 2,
         price: 400,
         percentDiscount: 10,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -291,9 +331,11 @@ export const products = [
         title: "Tennis keychain",
         description:
             "This unique metal tennis racket and ball keyring is durable, lightweight and practical. Made from environmentally friendly materials, it has a good 3 dimensional effect and is light and easy to carry.",
+        sellerName: "OnSport",
         rating: 4,
         price: 600,
         percentDiscount: 20,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -305,9 +347,11 @@ export const products = [
         title: "Sports trophy",
         description:
             "These medium-sized and lightweight awards come packed in a sturdy box to facilitate storage. They have the perfect size and weight to be carried around by people of any age.",
+        sellerName: "OnSport",
         rating: 3,
         price: 1000,
         percentDiscount: 15,
+        quantityInCart: 0,
     },
     {
         _id: uuid(),
@@ -319,8 +363,10 @@ export const products = [
         title: "Sports medals",
         description:
             "Metal award medals with neck ribbon - Gold, Silver, Bronze. Made of premium quality metal, zinc alloy, our medals can be preserved for a long time.",
+        sellerName: "OnSport",
         rating: 4,
         price: 600,
         percentDiscount: 5,
+        quantityInCart: 0,
     },
 ];
