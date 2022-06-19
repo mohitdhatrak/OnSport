@@ -1,23 +1,32 @@
 // All local imports
 import sortStyles from "./SortContainer.module.css";
+import { sortData } from "../../../../data";
 
 export function SortContainer() {
     return (
         <div className={sortStyles["sort-container"]}>
+            <button>
+                <ul className={sortStyles["sort-selected"]}>
+                    <li>Sort by :</li>
+                    <li className={sortStyles["dropdown-item"]}>
+                        <b>Best selling</b>
+                    </li>
+                    <li>
+                        <i
+                            className={`material-icons ${sortStyles["dropdown-icon"]}`}
+                        >
+                            arrow_drop_down
+                        </i>
+                    </li>
+                </ul>
+            </button>
             <ul className={sortStyles["sort-options"]}>
-                <li>Sort by :</li>
-                <li className={sortStyles["dropdown-item"]}>
-                    <b>Price: Low to High</b>
-                </li>
-                <button>
-                    <i
-                        className={`material-icons ${sortStyles["dropdown-icon"]}`}
-                    >
-                        arrow_drop_down
-                    </i>
-                </button>
+                {sortData.map((type) => (
+                    <button key={type} className={sortStyles["dropdown-item"]}>
+                        {type}
+                    </button>
+                ))}
             </ul>
-            <ul></ul>
         </div>
     );
 }

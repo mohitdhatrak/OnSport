@@ -99,7 +99,21 @@
     border: 2px solid #808080;
     border-radius: 0.3em;
     padding: 0em 0.5em;
+    width: 2rem;
+    text-align: center;
 }
+
+/* for input number arrows to disappear */
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+/* Firefox */
+/* input[type="number"] {
+    -moz-appearance: textfield;
+} */
 
 .cart-card-footer {
     padding: 0;
@@ -140,11 +154,3 @@
     width: 35%;
     border-right: 1px solid #808080;
 }
-
-/* .cart-card-button:hover {
-    background-color: var(--cart-card-button-hover-color);
-}
-
-.cart-card-button:focus {
-    outline: var(--cart-card-button-focus-outline-color) solid 2px;
-} */

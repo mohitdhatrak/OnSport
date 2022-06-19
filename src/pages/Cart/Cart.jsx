@@ -20,7 +20,6 @@ export function Cart() {
     }
 
     return (
-        // /* Move to cart feature in wishlist card */
         <>
             <CartTopNavigation />
 

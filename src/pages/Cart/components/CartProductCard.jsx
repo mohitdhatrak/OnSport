@@ -131,11 +131,16 @@ export function CartProductCard({ product }) {
                                         remove_circle_outline
                                     </i>
                                 </button>
-                                <span className="cart-quantity-display">
-                                    {quantityLoading
-                                        ? "Updating..."
-                                        : quantityInCart}
-                                </span>
+                                <input
+                                    type="text"
+                                    className="cart-quantity-display"
+                                    onClick={(event) => {
+                                        event.stopPropagation();
+                                    }}
+                                    value={
+                                        quantityLoading ? "..." : quantityInCart
+                                    }
+                                />
                                 <button
                                     className="cart-quantity-button"
                                     onClick={(event) =>

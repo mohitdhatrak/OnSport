@@ -50,6 +50,9 @@ button {
 .cart-container {
     grid-area: cart-content;
     margin-bottom: 2em;
+    padding: 0.2em 0;
+    max-height: 68vh;
+    overflow: scroll;
 
     /* grid properties */
     display: grid;
@@ -65,7 +68,12 @@ button {
 @media screen and (max-width: 720px) {
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-areas: "nav" "cart-content" "price-dialog";
+        grid-template-areas: "nav" "price-dialog" "cart-content";
+    }
+
+    .cart-container {
+        max-height: none;
+        overflow: none;
     }
 
     .price-modal {
