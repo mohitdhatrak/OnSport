@@ -1,5 +1,8 @@
 :root {
     /* card css-variables */
+    --category-card-bg-color: transparent;
+    --category-card-border: 1px solid #000;
+    --category-card-border-radius: 1em;
     --category-card-hover-box-shadow: 0px 0px 20px 1px #e3dddd;
     --category-card-border-radius: 0.3em;
     --category-card-image-text-overlay-color: #000;

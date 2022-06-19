@@ -1,27 +1,57 @@
 .sort-container {
+    margin-right: 1%;
+    position: relative;
+
     /* flex properties */
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.sort-options {
+.sort-selected {
     width: 20rem;
     border: 1px solid #000;
     border-radius: 0.2em;
-    padding: 0.3em 0.6em;
+    padding: 0.3em 1em;
+    position: relative;
+    font-size: 1rem;
 
     /* flex properties */
     display: flex;
     align-items: center;
 }
 
+.sort-options {
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 0.2em;
+    padding: 0.5em 0;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    background-color: #fff;
+
+    /* remove display none later it has to be toggled based on click */
+    display: none;
+}
+
 .dropdown-item {
-    padding-left: 1em;
+    padding: 0.5em;
+    padding-left: 0.6em;
     padding-right: 2.6em;
 }
 
+.sort-options .dropdown-item {
+    text-align: start;
+    font-size: 1rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
 .dropdown-icon {
-    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 25%;
 }
 
 .footer-container {

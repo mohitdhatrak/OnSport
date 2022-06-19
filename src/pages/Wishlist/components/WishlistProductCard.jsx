@@ -1,5 +1,6 @@
 // All module imports
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 // All local imports
 import "../../ProductListing/components/ProductCard/ProductCard.css";
@@ -18,12 +19,50 @@ export function WishlistProductCard({ product }) {
     } = product;
 
     const navigate = useNavigate();
-    const { dispatch } = useProducts();
+    const { cart, dispatch } = useProducts();
+    const [wishlistLoading, setWishlistLoading] = useState(false);
+    const [cartLoading, setCartLoading] = useState(false);
+
+    const isBestseller = () =>
+        bestSeller ? <span className="card-badge">Bestseller</span> : "";
+
+    function removeFromWishlist(event) {
+        event.stopPropagation();
+
+        setWishlistLoading(true);
+
+        dispatch({ type: "REMOVE_FROM_WISHLIST", payload: product });
+
+        setWishlistLoading(false);
+    }
+
+    const removeFromWishlistBtn = () =>
+        wishlistLoading ? (
+            "..."
+        ) : (
+            <i className="material-icons card-svg-icons">highlight_off</i>
+        );
+
+    function moveToCart(event) {
+        event.stopPropagation();
+
+        setCartLoading(true);
+
+        if (!isPresentInCart()) {
+            dispatch({ type: "ADD_TO_CART", payload: product });
+        }
+
+        dispatch({ type: "REMOVE_FROM_WISHLIST", payload: product });
+
+        setCartLoading(false);
+    }
+
+    const isPresentInCart = () => cart.some((obj) => obj._id === product._id);
 
     return (
         <li
             className="card-item"
-            onClick={() => navigate(`/product-detail?id=${product._id}`)}
+            onClick={() => navigate(`/product-detail/${product._id}`)}
         >
             <div className="card card-vertical card-with-dismiss">
                 <div className="card-body">
@@ -33,25 +72,14 @@ export function WishlistProductCard({ product }) {
                             alt={imageAlt}
                             className="card-image"
                         />
-                        {bestSeller ? (
-                            <span className="card-badge">Bestseller</span>
-                        ) : (
-                            ""
-                        )}
+                        {isBestseller()}
                         <div className="card-secondary-buttons-container">
                             <button
                                 className="card-button"
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    dispatch({
-                                        type: "REMOVE_FROM_WISHLIST",
-                                        payload: product,
-                                    });
-                                }}
+                                onClick={(event) => removeFromWishlist(event)}
+                                disabled={wishlistLoading || cartLoading}
                             >
-                                <i className="material-icons card-svg-icons">
-                                    highlight_off
-                                </i>
+                                {removeFromWishlistBtn()}
                             </button>
                         </div>
                         <header className="card-header-container">
@@ -74,7 +102,13 @@ export function WishlistProductCard({ product }) {
                 </div>
                 <div className="card-footer">
                     <div className="card-primary-buttons-container">
-                        <button className="card-button">Move to cart</button>
+                        <button
+                            className="card-button"
+                            onClick={(event) => moveToCart(event)}
+                            disabled={cartLoading || wishlistLoading}
+                        >
+                            {cartLoading ? "Moving..." : "Move to cart"}
+                        </button>
                     </div>
                 </div>
             </div>

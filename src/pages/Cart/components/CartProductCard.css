@@ -1,0 +1,156 @@
+:root {
+    --cart-card-border: 1px solid #000;
+    --cart-card-border-radius: 0.3em;
+    --cart-card-hover-box-shadow: none;
+}
+
+.cart-card-item {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 40em;
+    cursor: pointer;
+}
+
+.cart-card {
+    width: 100%;
+    border: var(--cart-card-border);
+    border-radius: var(--cart-card-border-radius);
+
+    /* flex - properties */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 0.5em;
+}
+
+.cart-card:hover {
+    box-shadow: var(--cart-card-hover-box-shadow);
+}
+
+.cart-card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.cart-card-image-header-container {
+    position: relative;
+    display: flex;
+}
+
+.cart-card-image {
+    width: 8rem;
+    border-radius: var(--cart-card-border-radius);
+    margin: 0.5em;
+    margin-bottom: 0;
+    margin-right: 0;
+    border: 1px solid #808080;
+    object-fit: cover;
+}
+
+.cart-card-header-container {
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.cart-card-heading {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 1.2rem;
+}
+
+.cart-card-subheading {
+    margin: 0;
+    padding: 0 1.2rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.cart-discount-price {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.cart-mrp {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.cart-quantity-button {
+    /* flex properties */
+    display: flex;
+    align-items: center;
+}
+
+.cart-quantity-icons {
+    font-size: 1.1rem !important;
+    color: #475569;
+}
+
+.cart-quantity-display {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 2px solid #808080;
+    border-radius: 0.3em;
+    padding: 0em 0.5em;
+    width: 2rem;
+    text-align: center;
+}
+
+/* for input number arrows to disappear */
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+/* Firefox */
+/* input[type="number"] {
+    -moz-appearance: textfield;
+} */
+
+.cart-card-footer {
+    padding: 0;
+
+    /* flex - properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.cart-card-primary-buttons-container {
+    width: 100%;
+    border-top: 1px solid #808080;
+
+    /* flex - properties */
+    display: flex;
+    gap: 0;
+}
+
+.cart-card-button {
+    width: 65%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    color: #808080;
+    border-radius: 0;
+    text-align: center;
+}
+
+.cart-card-button:nth-child(1) {
+    width: 35%;
+    border-right: 1px solid #808080;
+}

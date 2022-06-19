@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./TopNavigation.css";
 import logo from "../../assets/website-logo.png";
 import { useProducts } from "../../context/products-context";
+import { numOfProductsInCart } from "../../utils/numOfProductsInCart";
 
 export function WishlistTopNavigation() {
     const { cart } = useProducts();
@@ -40,7 +41,9 @@ export function WishlistTopNavigation() {
                         {cart.length === 0 ? (
                             ""
                         ) : (
-                            <div className="badge-badge2">{cart.length}</div>
+                            <div className="badge-badge2">
+                                {numOfProductsInCart()}
+                            </div>
                         )}
                     </Link>
                 </div>

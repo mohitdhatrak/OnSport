@@ -1,0 +1,87 @@
+:root {
+    /* confirmation modal css variables */
+    --modal-width: 25rem;
+    --modal-bg-color: none;
+    --modal-border: 1px solid #000;
+    --modal-border-radius: 0.3em;
+    --modal-text-color: #000;
+    --modal-text-hover-color: #7dd3fc;
+    --modal-text-hover-border-radius: 0.3em;
+    --confirmation-modal-height: max-content;
+    --confirmation-modal-divider-border: 1px solid #000;
+    --modal-text-focus-outline-color: #000;
+}
+
+.modal {
+    max-width: 95%;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.confirmation-modal .modal-body {
+    align-items: unset;
+}
+
+.confirmation-modal .modal-body .modal-text {
+    width: max-content;
+    padding-left: 0;
+    cursor: default;
+}
+
+.modal-text:hover {
+    background-color: transparent;
+}
+
+.money-details {
+    /* flex properties */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.highlight-item {
+    color: var(--secondary-color);
+}
+
+.divider-line {
+    width: 100%;
+    border-style: dashed;
+    color: #000;
+    margin: 0;
+}
+
+.total-amount {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.modal-buttons-container {
+    justify-content: center;
+}
+
+.modal-buttons-container .modal-button {
+    background-color: var(--secondary-color);
+    border-radius: 0.3em;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-buttons-container .modal-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 950px) {
+    :root {
+        --modal-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .modal {
+        margin: 0 auto;
+    }
+}
