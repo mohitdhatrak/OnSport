@@ -34,7 +34,7 @@ export function CartTopNavigation() {
                     </i>
                     <span className="navigation-button-text">Wishlist</span>
                 </Link>
-                <button className="button button-warn">Logout</button>
+                {/* <button className="button button-warn">Logout</button> */}
             </div>
         </nav>
     );

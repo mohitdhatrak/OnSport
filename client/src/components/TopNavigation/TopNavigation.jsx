@@ -53,11 +53,11 @@ export function TopNavigation() {
                         )}
                     </Link>
                 </div>
-                <button className="button button-secondary">
+                {/* <button className="button button-secondary">
                     <Link to="/login" className="login-signup-link">
                         Login
                     </Link>
-                </button>
+                </button> */}
             </div>
         </nav>
     );

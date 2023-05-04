@@ -47,7 +47,7 @@ export function WishlistTopNavigation() {
                         )}
                     </Link>
                 </div>
-                <button className="button button-warn">Logout</button>
+                {/* <button className="button button-warn">Logout</button> */}
             </div>
         </nav>
     );
